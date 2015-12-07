@@ -23,5 +23,39 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+/*-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"Checklists"];//tableview队列中可以重复使用的cell的标识符
+    return cell;
+}*/
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    //视图上哪些cell所显示的哪一行数据？
+    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"Checklists"];
+    return cell;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end
